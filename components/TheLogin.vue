@@ -4,6 +4,11 @@ const test = ref();
 const login = () => {
   console.log(test);
 };
+
+const update = async () => {
+  const url = ``;
+  const data = await fetch(url);
+};
 </script>
 <template>
   <div class="flex justify-center items-center h-screen">
@@ -41,7 +46,7 @@ const login = () => {
         ><input
           type="password"
           name="password"
-          placeholder="XXXXXXX"
+          placeholder="******************"
           id="password"
           class="mt-2 appearance-none text-slate-900 bg-white rounded-md block w-full px-3 h-10 shadow-sm sm:text-sm focus:outline-none placeholder:text-slate-400 focus:ring-2 focus:ring-[#37899A] ring-1 ring-slate-200"
           aria-required
