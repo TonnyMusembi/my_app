@@ -8,6 +8,8 @@ async function searchShows(search) {
   const data = await fetch(url + search.value);
 }
 async function submit() {
+  const url = ``;
+  const data = await fetch(url);
   console.log(test);
   if (!search.value) return;
   searchShows(search);
