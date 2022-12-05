@@ -6,7 +6,7 @@ const login = () => {
 };
 </script>
 <template>
-  <div class="grid h-screen place-items-center">
+  <div class="flex justify-center items-center h-screen">
     <form @submit.prevent="login" class="w-full max-w-sm">
       <div class="mb-6">
         <label
