@@ -55,7 +55,7 @@ const login = () => {
         class="inline-flex justify-center rounded-lg text-sm font-semibold py-2.5 px-4 text-sky-50 bg-[#37899A] hover:text-sky-50/80 hover:bg-green-500 w-full"
       >
         <Spin v-if="pending" />
-        <span v-else>Sign in to account</span>
+        <span v-else>Login</span>
       </button>
       <p class="mt-6 text-center">
         <a href="/password/reset" class="text-sm hover:underline"
