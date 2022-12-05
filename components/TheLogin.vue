@@ -6,11 +6,8 @@ const login = () => {
 };
 </script>
 <template>
-  <div class="w-full max-w-xs">
-    <form
-      @submit.prevent="login"
-      class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4"
-    >
+  <div class="flex justify-center items-center h-screen">
+    <form @submit.prevent="login" class="w-full max-w-sm">
       <div class="mb-6">
         <label
           for="phone"
