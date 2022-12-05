@@ -1,4 +1,12 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+
+</script>
 <template>
-  <div></div>
+    <form @submit.prevent="">
+
+
+
+
+    </form>
+  
 </template>

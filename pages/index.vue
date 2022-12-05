@@ -10,7 +10,9 @@ async function searchShows(search) {
 async function submit() {
   const url = ``;
   const data = await fetch(url);
+
   console.log(test);
+
   if (!search.value) return;
   searchShows(search);
 }
@@ -55,7 +57,7 @@ const toggle = () => {
                     >Calendar</a
                   >
                   <a
-                    href="#"
+                    href="TheLogin"
                     class="ml-4 px-3 py-2 rounded-md text-sm font-medium text-gray-300 hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700"
                     >Reports</a
                   >
