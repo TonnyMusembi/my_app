@@ -8,9 +8,6 @@ async function searchShows(search) {
   const data = await fetch(url + search.value);
 }
 async function submit() {
-  //   const data = await fetch(url + search.value);
-  //   console.log(data);
-
   console.log(test);
   if (!search.value) return;
   searchShows(search);
@@ -94,7 +91,7 @@ const toggle = () => {
                       aria-label="User menu"
                       aria-haspopup="true"
                     >
-                      <img class="h-8 w-8 rounded-full" src="" alt />
+                      <img class="h-8 w-8 rounded-full" src="" />
                     </button>
                   </div>
                   <transition
@@ -206,11 +203,7 @@ const toggle = () => {
           <div class="pt-4 pb-3 border-t border-gray-700">
             <div class="flex items-center px-5">
               <div class="flex-shrink-0">
-                <img
-                  class="h-10 w-10 rounded-full"
-                  src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
-                  alt
-                />
+                <img class="h-10 w-10 rounded-full" src="" />
               </div>
               <div class="ml-3">
                 <div class="text-base font-medium leading-none text-white">
@@ -251,6 +244,14 @@ const toggle = () => {
           </h1>
         </div>
       </header>
+      <div class="flex justify-end">
+        <button
+          class="bg-gray-500 hover:bg-gray-700 text-white font-bold py-1 px-1 rounded"
+          v-on:click="submit()"
+        >
+          View
+        </button>
+      </div>
       <main>
         <div class="max-w-7xl mx-auto py-6 sm:px-6 lg:px-8">
           <!-- Replace with your content -->
