@@ -27,7 +27,6 @@ const update = async () => {
             type="text"
             placeholder="Tonny"
           />
-          <p class="text-red-500 text-xs italic">Please fill out this field.</p>
         </div>
         <div class="w-full md:w-1/2 px-3">
           <label
