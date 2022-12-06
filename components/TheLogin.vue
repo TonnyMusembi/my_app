@@ -35,6 +35,7 @@ const update = async () => {
             id="phone"
             class="appearance-none px-1 text-slate-900 w-full h-full rounded-r-md bg-white block focus:outline-none placeholder:text-slate-400 focus:ring-2 focus:ring-[#37899A]"
             required
+            minlength="12"
           />
         </div>
       </div>
@@ -54,7 +55,6 @@ const update = async () => {
           minlength="6"
         />
       </div>
-
       <button
         type="submit"
         class="inline-flex justify-center rounded-lg text-sm font-semibold py-2.5 px-4 text-sky-50 bg-[#37899A] hover:text-sky-50/80 hover:bg-green-500 w-full"
