@@ -1,9 +1,13 @@
 <script setup lang="ts">
 const test = ref();
+const tests = ref();
 const register = async () => {
   const url = ``;
   const data = await fetch(url);
   console.log(test);
+};
+const update = async () => {
+  console.log(tests);
 };
 </script>
 <template>
