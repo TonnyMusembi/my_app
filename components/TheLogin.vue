@@ -6,13 +6,30 @@ const login = () => {
 };
 
 const update = async () => {
-  const url = ``;
-  const data = await fetch(url);
+  console.log(test);
+  const option = {
+    // method: "GET",
+    // url: "https://us-weather-by-zip-code.p.rapidapi.com/getweatherzipcode",
+    params: { zip: "94111" },
+    headers: {
+      "X-RapidAPI-Key": "68a17b08dbmshe68484fe4f7905bp16ece9jsn2069f40c2728",
+      "X-RapidAPI-Host": "us-weather-by-zip-code.p.rapidapi.com",
+    },
+  };
+
+  const data = await fetch(
+    `https://us-weather-by-zip-code.p.rapidapi.com/getweatherzipcode`,
+    option
+  ).then((response) => {
+    console.log(response);
+    const data = response.json();
+  });
 };
+// update();
 </script>
 <template>
   <div class="flex justify-center items-center h-screen">
-    <form @submit.prevent="login" class="w-full max-w-sm">
+    <form @submit.prevent="update" class="w-full max-w-sm">
       <div class="mb-6">
         <label
           for="phone"
@@ -35,7 +52,6 @@ const update = async () => {
             id="phone"
             class="appearance-none px-1 text-slate-900 w-full h-full rounded-r-md bg-white block focus:outline-none placeholder:text-slate-400 focus:ring-2 focus:ring-[#37899A]"
             required
-            minlength="12"
           />
         </div>
       </div>
