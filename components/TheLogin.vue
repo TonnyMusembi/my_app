@@ -20,7 +20,11 @@ const update = async () => {
   const data = await fetch(
     `https://us-weather-by-zip-code.p.rapidapi.com/getweatherzipcode`,
     option
-  ).then((response) => response.json());
+  )
+    .then((response) => response.json())
+    .catch((err) => {
+      console.log(err);
+    });
 };
 // update();
 </script>
