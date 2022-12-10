@@ -3,6 +3,7 @@ import { fetch } from "ofetch";
 
 const pending = ref();
 const test = ref();
+// const products = ref();
 const login = () => {
   console.log(test);
 };
@@ -28,9 +29,23 @@ const update = async () => {
       console.log(err);
     });
 };
+
 // update();
-
-
+const headers = {
+  headers: {
+    "X-RapidAPI-Key": "68a17b08dbmshe68484fe4f7905bp16ece9jsn2069f40c2728",
+    "X-RapidAPI-Host": "api-football-beta.p.rapidapi.com",
+  },
+};
+const url = `https://api-football-beta.p.rapidapi.com/timezone`;
+const products = useFetch(url, headers)
+  .then((res) => {
+    console.log(res.data);
+  })
+  .catch((er) => {
+    console.log(er);
+  });
+console.log(products);
 </script>
 <template>
   <div class="flex justify-center items-center h-screen">
@@ -90,7 +105,9 @@ const update = async () => {
       </p>
     </form>
   </div>
-  <div class="mb-6 flex  justify-center">
-    <button class="bg-cyan-500  hover:bg-cyan-400 text-white rounded px-5 py-2">Next</button>
+  <div class="mb-6 flex justify-center">
+    <button class="bg-cyan-500 hover:bg-cyan-400 text-white rounded px-5 py-2">
+      Next
+    </button>
   </div>
 </template>
