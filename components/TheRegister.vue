@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import { fetch } from "ofetch";
+
 const test = ref();
 const tests = ref();
 const register = async () => {
@@ -9,6 +11,15 @@ const register = async () => {
 const update = async () => {
   console.log(tests);
 };
+
+const url = ``;
+const data = await fetch(url)
+  .then((response) => {
+    console.log(response);
+  })
+  .catch((err) => {
+    console.log(err);
+  });
 </script>
 <template>
   <div class="flex justify-center items-center">
