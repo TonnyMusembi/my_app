@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import { fetch } from "ofetch";
+
 const pending = ref();
 const test = ref();
 const login = () => {
@@ -27,6 +29,8 @@ const update = async () => {
     });
 };
 // update();
+
+
 </script>
 <template>
   <div class="flex justify-center items-center h-screen">
