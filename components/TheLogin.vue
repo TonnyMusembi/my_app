@@ -86,4 +86,7 @@ const update = async () => {
       </p>
     </form>
   </div>
+  <div class="mb-6 flex  justify-center">
+    <button class="bg-cyan-500  hover:bg-cyan-400 text-white rounded px-5 py-2">Next</button>
+  </div>
 </template>
