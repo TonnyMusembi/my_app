@@ -39,9 +39,11 @@ const headers = {
 };
 const url = `https://api-football-beta.p.rapidapi.com/timezone`;
 const products = useFetch(url, headers)
+
   .then((res) => {
     console.log(res.data);
   })
+  // const data = await res.json();
   .catch((er) => {
     console.log(er);
   });
