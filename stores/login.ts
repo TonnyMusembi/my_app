@@ -4,3 +4,6 @@ export interface Login {
   name: string;
   password: string;
 }
+// const state = () LoginState =>({
+
+// })
