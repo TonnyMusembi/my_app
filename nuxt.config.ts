@@ -3,7 +3,7 @@ export default defineNuxtConfig({
   //   buildModules: ["@nuxtjs/tailwindcss"],
   modules: [
     "@nuxtjs/tailwindcss",
-
+    "nuxt-vite",
     [
       "@pinia/nuxt",
       {

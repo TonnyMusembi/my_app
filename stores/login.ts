@@ -7,3 +7,8 @@ export interface Login {
 // const state = () LoginState =>({
 
 // })
+
+export interface createUser {
+  name: string;
+  password: string;
+}
