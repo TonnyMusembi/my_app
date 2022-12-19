@@ -48,6 +48,10 @@ const products = useFetch(url, headers)
     console.log(er);
   });
 console.log(products);
+
+
+
+
 </script>
 <template>
   <div class="flex justify-center items-center h-screen">
